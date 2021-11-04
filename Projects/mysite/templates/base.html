@@ -1,0 +1,67 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Osiris Web</title>
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="/static/img/icon.png" size="200x200" type="image/x-icon">
+    <link rel="icon" href="/static/img/icon.png"  size="200x200" type="image/x-icon">
+
+    <!--  Bootstrap css file  -->
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+
+    <!--  font awesome icons  -->
+    <script src="https://kit.fontawesome.com/da11f279bc.js" crossorigin="anonymous"></script>
+
+    <!--  Magnific Popup css file  -->
+    <link rel="stylesheet" href="{% static 'magnific-popup.css'%}">
+
+
+    <!--  Owl-carousel css file  -->
+    <link rel="stylesheet" href="{% static 'owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static  'owl.theme.default.min.css' %}">
+
+    <!--  custom css file  -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="{% static 'responsive.css' %}">
+
+</head>
+<body>
+    {% include "navbar.html" %}
+
+
+    {% block content %}
+    {% endblock%}
+
+
+
+    {% include "footer.html" %}
+
+
+    <!--  Jquery js file  -->
+    <script src="{% static 'jquery.3.4.1.js' %}"></script>
+
+    <!--  Bootstrap js file  -->
+    <script src="{% static 'bootstrap.min.js' %}"></script>
+
+    <!--  isotope js library  -->
+    <script src="{% static 'isotope.min.js' %}"></script>
+
+    <!--  Magnific popup script file  -->
+    <script src="{% static 'jquery.magnific-popup.min.js' %}"></script>
+
+    <!--  Owl-carousel js file  -->
+    <script src="{% static 'owl.carousel.min.js' %}"></script>
+
+    <!--  custom js file  -->
+    <script src="{% static 'main.js' %}"></script>
+
+</body>
+
+</html>
